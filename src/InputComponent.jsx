@@ -7,13 +7,13 @@ export function InputComponent({ addToList, inputRef }) {
         <input
           ref={inputRef}
           className="input-field"
-          placeholder="Get typing buddy!"
+          placeholder="What's on your list today?"
           onKeyDown={(e) => {
             e.key === "Enter" && addToList();
           }}
         />
         <button className="add-btn" onClick={addToList}>
-          ADD
+          Add Task
         </button>
       </article>
     </>
