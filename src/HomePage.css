@@ -3,6 +3,7 @@
 :root {
   --secondary-clr: rgb(255, 199, 69);
   --add-btn-hover: #4ed268;
+  --text-black-clr: rgb(5, 5, 5);
 
   background-color: #064948;
 }
@@ -82,7 +83,7 @@ p {
 
 .foottext {
   text-decoration: none;
-  color: rgb(5, 5, 5);
+  color: var(--text-black-clr);
 }
 
 .link {

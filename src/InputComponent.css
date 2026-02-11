@@ -25,6 +25,7 @@
   border: none;
   border-radius: 0 1rem 1rem 0;
   font-size: 1rem;
+  color: var(--text-black-clr);
 
   font-weight: 600;
   transition:
