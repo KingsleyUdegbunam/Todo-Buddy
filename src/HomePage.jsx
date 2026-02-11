@@ -13,6 +13,7 @@ export function HomePage() {
       return [];
     }
   });
+
   const inputRef = useRef("");
 
   const sortedTodoData = [
@@ -45,26 +46,34 @@ export function HomePage() {
           <InputComponent addToList={addToList} inputRef={inputRef} />
 
           <div className="todo-list-container">
-            {sortedTodoData.map((todo) => {
-              return (
-                <TodoComponent
-                  key={todo.key}
-                  setTodoListData={setTodoListData}
-                  todo={todo}
-                />
-              );
-            })}
+            {sortedTodoData.length > 0 ? (
+              sortedTodoData.map((todo) => {
+                return (
+                  <TodoComponent
+                    key={todo.key}
+                    setTodoListData={setTodoListData}
+                    todo={todo}
+                  />
+                );
+              })
+            ) : (
+              <article className="empty-todo">
+                <p>
+                  Nothing here yet. Add your first task and let's get moving{" "}
+                  <span className="bouncing-emoji">🚀</span>
+                </p>
+              </article>
+            )}
           </div>
         </div>
 
         <footer className="footnote">
-          Built by
           <a
-            className="link"
+            className="foottext"
             target="_blank"
             href="https://www.linkedin.com/in/kingsley-udegbunam/"
           >
-            Kay.
+            Built by <span className="link">Kay.</span>
           </a>
         </footer>
       </section>

@@ -75,25 +75,50 @@ p {
 
 .footnote {
   margin-top: 5rem;
-  text-align: end;
-  margin-inline-end: 3rem;
-  margin-block-end: 3rem;
+  text-align: center;
 
   opacity: 0.9;
 }
 
-.link {
+.foottext {
   text-decoration: none;
+  color: rgb(5, 5, 5);
+}
+
+.link {
   color: var(--secondary-clr);
   font-weight: bold;
 }
 
-.link::before {
-  content: " ";
-}
-
 .footnote:hover {
   opacity: 1;
+}
+.empty-todo {
+  background-color: #f0f8ff;
+  display: grid;
+  place-content: center;
+  padding: 3.5rem;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+.empty-todo p {
+  color: rgb(40, 40, 40);
+}
+
+.bouncing-emoji {
+  display: inline-block;
+  animation: bounce 1s infinite ease-in-out;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(3px);
+  }
 }
 
 @media screen and (max-width: 27rem) {
