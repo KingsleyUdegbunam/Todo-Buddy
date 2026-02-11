@@ -7,7 +7,7 @@ export function InputComponent({ addToList, inputRef }) {
         <input
           ref={inputRef}
           className="input-field"
-          placeholder="Get typing buddy"
+          placeholder="Get typing buddy!"
           onKeyDown={(e) => {
             e.key === "Enter" && addToList();
           }}
