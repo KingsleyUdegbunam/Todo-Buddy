@@ -26,9 +26,16 @@
   border-radius: 1rem;
 
   font-weight: 600;
+  transition:
+    background-color,
+    100ms ease-out;
 }
 
 .add-btn:hover {
   cursor: pointer;
-  background-color: var(--add-btn-hover);
+  background-color: rgb(252, 183, 23);
+}
+
+.add-btn:active {
+  background-color: rgb(60, 230, 111);
 }

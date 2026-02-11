@@ -92,3 +92,7 @@ p {
 .link::before {
   content: " ";
 }
+
+.footnote:hover {
+  opacity: 1;
+}
