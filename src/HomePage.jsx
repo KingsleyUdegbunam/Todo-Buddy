@@ -5,7 +5,14 @@ import { InputComponent } from "./InputComponent";
 import { TodoComponent } from "./TodoComponent";
 
 export function HomePage() {
-  const [todoListData, setTodoListData] = useState([]);
+  const [todoListData, setTodoListData] = useState(() => {
+    try {
+      const storedTodos = localStorage.getItem("todoList");
+      return storedTodos ? JSON.parse(storedTodos) : [];
+    } catch {
+      return [];
+    }
+  });
   const inputRef = useRef("");
 
   const sortedTodoData = [
@@ -14,14 +21,13 @@ export function HomePage() {
   ];
 
   useEffect(() => {
-    console.log(todoListData);
+    localStorage.setItem("todoList", JSON.stringify(todoListData));
   }, [todoListData]);
 
   function addToList() {
     const value = inputRef.current.value.trim();
 
     if (!value) return;
-    console.log("yes");
 
     setTodoListData((prev) => [
       ...prev,
