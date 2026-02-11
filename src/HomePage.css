@@ -1,39 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Handlee&family=Notable&display=swap");
+
+:root {
+  --secondary-clr: rgb(255, 199, 69);
+  --add-btn-hover: #4ed268;
+
+  background-color: #064948;
+}
+
+input::placeholder,
+input,
+button,
+p {
+  font-family: "Handlee", cursive;
+}
+
 .header-text {
   font-size: 2.5rem;
   font-weight: 900;
   margin-bottom: 1rem;
-}
-
-.input-section {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  background-color: aliceblue;
-  border: 1px black solid;
-  border-radius: 1rem;
-}
-
-.input-field {
-  width: 100%;
-  border: none;
-  background-color: transparent;
-  padding: 1rem;
-}
-
-.input-field:focus,
-.input-field:hover {
-  outline: none;
-}
-
-.add-btn {
-  width: 7rem;
-  background-color: palegoldenrod;
-  border: none;
-  border-radius: 1rem;
-}
-
-.add-btn:hover {
-  cursor: pointer;
+  font-family: "Notable", sans-serif;
+  color: var(--secondary-clr);
 }
 
 .todo-list-container {
@@ -48,28 +34,11 @@
   margin-bottom: 0;
 }
 
-.todo {
-  display: flex;
-  justify-content: space-between;
-
-  padding: 1rem;
-  background-color: cadetblue;
-  border-radius: 0.5rem;
-
-  width: inherit;
-}
-
-.todo-left-elems {
-  display: flex;
-}
-
-input[type="checkbox"] {
-  margin-right: 0.5rem;
-}
-
 .main-container {
   display: flex;
-  height: 100vh;
+
+  padding-block: 3rem;
+  overflow-y: hidden;
 
   flex-direction: column;
   align-items: center;
@@ -78,7 +47,8 @@ input[type="checkbox"] {
 .main-container-wrapper {
   width: 80%;
 
-  background-color: palegoldenrod;
+  overflow-y: hidden;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -104,7 +74,21 @@ input[type="checkbox"] {
   }
 }
 
-.completed-todo {
-  text-decoration: line-through;
-  color: rgb(66, 66, 66);
+.footnote {
+  margin-top: 5rem;
+  text-align: end;
+  margin-inline-end: 3rem;
+  margin-block-end: 3rem;
+
+  opacity: 0.9;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--secondary-clr);
+  font-weight: bold;
+}
+
+.link::before {
+  content: " ";
 }

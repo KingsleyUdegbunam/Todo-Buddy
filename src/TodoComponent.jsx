@@ -1,3 +1,4 @@
+import "./TodoComponent.css";
 export function TodoComponent({ todo, setTodoListData }) {
   return (
     <article key={todo.key} className="todo">
@@ -30,7 +31,7 @@ export function TodoComponent({ todo, setTodoListData }) {
         }}
       >
         <svg
-          className="delete-btn js-delete-btn"
+          className="delete-btn-svg js-delete-btn"
           data-number="1"
           xmlns="http://www.w3.org/2000/svg"
           x="0px"

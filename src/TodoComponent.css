@@ -1,0 +1,52 @@
+.todo {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 1rem;
+  background-color: rgb(11, 11, 11);
+  color: rgb(220, 219, 219);
+  border-radius: 0.5rem;
+
+  width: inherit;
+}
+
+.todo-left-elems {
+  display: flex;
+  align-items: center;
+}
+
+input[type="checkbox"] {
+  margin-right: 0.5rem;
+  accent-color: var(--secondary-clr);
+  width: 1.1rem;
+  aspect-ratio: 1;
+
+  border-radius: 50%;
+}
+
+input[type="checkbox"]::checkmark {
+  appearance: none;
+}
+
+input[type="checkbox"]:hover {
+  cursor: pointer;
+}
+
+.delete-btn-svg {
+  color: rgb(234, 30, 30);
+}
+
+.delete-btn-container {
+  opacity: 0.8;
+  padding: 0.5rem;
+}
+
+.delete-btn-container:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.completed-todo {
+  text-decoration: line-through;
+  color: rgb(66, 66, 66);
+}

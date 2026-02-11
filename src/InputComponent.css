@@ -1,0 +1,34 @@
+.input-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: aliceblue;
+  /* border: 1px black solid; */
+  border-radius: 1rem;
+}
+
+.input-field {
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  padding: 1rem;
+}
+
+.input-field:focus,
+.input-field:hover {
+  outline: none;
+}
+
+.add-btn {
+  width: 7rem;
+  background-color: var(--secondary-clr);
+  border: none;
+  border-radius: 1rem;
+
+  font-weight: 600;
+}
+
+.add-btn:hover {
+  cursor: pointer;
+  background-color: var(--add-btn-hover);
+}

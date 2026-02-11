@@ -1,3 +1,5 @@
+import "./InputComponent.css";
+
 export function InputComponent({ addToList, inputRef }) {
   return (
     <>
@@ -11,7 +13,7 @@ export function InputComponent({ addToList, inputRef }) {
           }}
         />
         <button className="add-btn" onClick={addToList}>
-          Add
+          ADD
         </button>
       </article>
     </>
