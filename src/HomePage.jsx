@@ -32,23 +32,36 @@ export function HomePage() {
   }
 
   return (
-    <section className="main-container">
-      <p className="header-text">TODO BUDDY</p>
-      <div className="main-container-wrapper">
-        <InputComponent addToList={addToList} inputRef={inputRef} />
+    <>
+      <section className="main-container">
+        <p className="header-text">TODO BUDDY</p>
+        <div className="main-container-wrapper">
+          <InputComponent addToList={addToList} inputRef={inputRef} />
 
-        <div className="todo-list-container">
-          {sortedTodoData.map((todo) => {
-            return (
-              <TodoComponent
-                key={todo.key}
-                setTodoListData={setTodoListData}
-                todo={todo}
-              />
-            );
-          })}
+          <div className="todo-list-container">
+            {sortedTodoData.map((todo) => {
+              return (
+                <TodoComponent
+                  key={todo.key}
+                  setTodoListData={setTodoListData}
+                  todo={todo}
+                />
+              );
+            })}
+          </div>
         </div>
-      </div>
-    </section>
+
+        <footer className="footnote">
+          Built by
+          <a
+            className="link"
+            target="_blank"
+            href="https://www.linkedin.com/in/kingsley-udegbunam/"
+          >
+            Kay.
+          </a>
+        </footer>
+      </section>
+    </>
   );
 }
