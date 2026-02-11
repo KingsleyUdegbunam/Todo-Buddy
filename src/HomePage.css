@@ -20,6 +20,7 @@ p {
   margin-bottom: 1rem;
   font-family: "Notable", sans-serif;
   color: var(--secondary-clr);
+  text-align: center;
 }
 
 .todo-list-container {
@@ -37,8 +38,8 @@ p {
 .main-container {
   display: flex;
 
-  padding-block: 3rem;
-  overflow-y: hidden;
+  padding-block: 4rem 3rem;
+  padding-inline: 0.5rem;
 
   flex-direction: column;
   align-items: center;
@@ -46,8 +47,6 @@ p {
 
 .main-container-wrapper {
   width: 80%;
-
-  overflow-y: hidden;
 
   display: flex;
   flex-direction: column;
@@ -95,4 +94,10 @@ p {
 
 .footnote:hover {
   opacity: 1;
+}
+
+@media screen and (max-width: 27rem) {
+  .header-text {
+    font-size: 2rem;
+  }
 }

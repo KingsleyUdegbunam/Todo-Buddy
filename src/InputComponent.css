@@ -3,7 +3,6 @@
   display: flex;
   justify-content: center;
   background-color: aliceblue;
-  /* border: 1px black solid; */
   border-radius: 1rem;
 }
 
@@ -12,6 +11,7 @@
   border: none;
   background-color: transparent;
   padding: 1rem;
+  font-size: 1rem;
 }
 
 .input-field:focus,
@@ -23,7 +23,8 @@
   width: 7rem;
   background-color: var(--secondary-clr);
   border: none;
-  border-radius: 1rem;
+  border-radius: 0 1rem 1rem 0;
+  font-size: 1rem;
 
   font-weight: 600;
   transition:
@@ -38,4 +39,10 @@
 
 .add-btn:active {
   background-color: rgb(60, 230, 111);
+}
+
+@media screen and (max-width: 27rem) {
+  .input-field {
+    padding: 0.8rem;
+  }
 }
