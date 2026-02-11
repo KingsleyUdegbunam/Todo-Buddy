@@ -84,6 +84,7 @@ p {
 .foottext {
   text-decoration: none;
   color: var(--text-black-clr);
+  font-size: 0.7rem;
 }
 
 .link {
