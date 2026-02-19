@@ -32,7 +32,7 @@ export function HomePage() {
 
     setTodoListData((prev) => [
       ...prev,
-      { value, key: crypto.randomUUID(), completed: false },
+      { value, key: Date.now().toString(), completed: false },
     ]);
 
     inputRef.current.value = "";
