@@ -13,7 +13,7 @@ export function InputComponent({ addToList, inputRef }) {
           }}
         />
         <button className="add-btn" onClick={addToList}>
-          Add Task
+          Add <span className="optional-btn-text">Task</span>
         </button>
       </article>
     </>

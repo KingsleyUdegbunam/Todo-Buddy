@@ -47,3 +47,9 @@
     padding: 0.8rem;
   }
 }
+
+@media screen and (max-width: 22rem) {
+  .optional-btn-text {
+    display: none;
+  }
+}
