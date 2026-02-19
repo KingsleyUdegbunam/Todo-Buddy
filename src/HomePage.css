@@ -70,6 +70,7 @@ p {
 
 @supports not (gap: 1rem) {
   .main-container-wrapper > * {
+    display: block;
     margin-bottom: 1rem;
   }
 
