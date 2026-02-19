@@ -6,6 +6,10 @@
   border-radius: 1rem;
 }
 
+.todo-input-container {
+  width: 100%;
+}
+
 .input-field {
   width: 100%;
   border: none;
