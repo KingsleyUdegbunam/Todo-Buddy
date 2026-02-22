@@ -61,4 +61,14 @@ input[type="checkbox"]:hover {
   .todo {
     padding: 0.8rem;
   }
+
+  .delete-btn-container {
+    padding: 0rem;
+    height: 2rem;
+    width: 2rem;
+  }
+
+  .todo p {
+    font-size: 0.95rem;
+  }
 }

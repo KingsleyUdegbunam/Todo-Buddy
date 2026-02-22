@@ -58,7 +58,7 @@ p {
   align-items: center;
 }
 
-@supports (gap: 1rem) {
+@supports (display: flex) and (gap: 1rem) {
   .main-container-wrapper {
     gap: 1rem;
   }
@@ -68,7 +68,7 @@ p {
   }
 }
 
-@supports not (gap: 1rem) {
+@supports not ((display: flex) and (gap: 1rem)) {
   .main-container-wrapper > * {
     display: block;
     margin-bottom: 1rem;
