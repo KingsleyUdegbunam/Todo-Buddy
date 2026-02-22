@@ -56,27 +56,16 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 1rem;
 }
 
-@supports (display: flex) and (gap: 1rem) {
-  .main-container-wrapper {
-    gap: 1rem;
-  }
-
-  .main-container-wrapper > * {
-    margin: 0;
-  }
+.main-container-wrapper > * {
+  display: block;
+  margin-bottom: 0.5rem;
 }
 
-@supports not ((display: flex) and (gap: 1rem)) {
-  .main-container-wrapper > * {
-    display: block;
-    margin-bottom: 1rem;
-  }
-
-  .main-container-wrapper > *:last-child {
-    margin-bottom: 0;
-  }
+.main-container-wrapper > *:last-child {
+  margin-bottom: 0;
 }
 
 .footnote {
